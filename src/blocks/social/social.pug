@@ -1,0 +1,7 @@
+mixin social(data)
+	ul.social(class!=attributes.class)
+		- for (var i = 0; i < data.length; i++)
+			li.social__item
+				a.social__link(href=data[i]['url'])
+					span.visually-hidden=data[i]['text']
+					+icon(data[i]['icon'], 'icon--32')

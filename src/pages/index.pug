@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('ООО «Комацу»')
+
+	body
+		include ../blocks/mixins.pug
+		div.wrapper
+		
+			include ../blocks/header/header.pug 
+
+			main.main
+				include ../blocks/top/top.pug 
+				
+				include ../blocks/services/services.pug
+
+				include ../blocks/catalog/catalog.pug 
+
+				include ../blocks/about/about.pug
+
+				include ../blocks/feedback/feedback.pug
+
+			include ../blocks/footer/footer.pug
+		
+		include include/script.pug
